@@ -8,22 +8,29 @@ To run this project, follow the steps below:
 
 1. Clone this GitHub repository to your local machine and create a virtual environment with Python 3.10.11.
 
-2. Change the directory to `yolov10`:
+2. Clone this YOLOv10 repository to your local machine 
+    ```
+    git clone https://github.com/THU-MIG/yolov10.git
+    ```
+    Copy the `anpr.py` and `sql_database.py` files and paste them inside the `yolov10` directory.
+    Create a folder named `json` inside the `yolov10` directory.
+    
+3. Change the directory to `yolov10`:
     ```
     cd yolov10
     ```
 
-3. Install all the required dependencies from the `requirements.txt` file:
+4. Install all the required dependencies from the `requirements.txt` file:
     ```
     pip install -r requirements.txt
     ```
 
-4. Run the `sql_database.py` file to create a SQL database named `licensePlate.db`:
+5. Run the `sql_database.py` file to create a SQL database named `licensePlate.db`:
     ```
     python sql_database.py
     ```
 
-5. Finally, run the `anpr.py` file to start the car number plate detection system:
+6. Finally, run the `anpr.py` file to start the car number plate detection system:
     ```
     python anpr.py
     ```
